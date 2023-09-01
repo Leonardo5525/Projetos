@@ -19,11 +19,17 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Página inicial</a></li>
-                    <li><a href="Galeria.html">Galeria de Fotos</a></li>
-                    <li><a href="Equipe.html">Equipe</a></li>
-                    <li><a href="Sobre.html" class="current-page">Sobre</a></li>
-                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="index.php">Página inicial</a></li>
+                    <li><a href="Galeria.php">Galeria de Fotos</a></li>
+                    <li><a href="Equipe.php">Equipe</a></li>
+                    <li><a href="Sobre.php" class="current-page">Sobre</a></li>
+                    <li><a href="Contato.php">Contato</a></li>
+
+                    <div class="right">
+                        <?= !isset($_SESSION['user']) ? '<li><a href="Login.html" class="login">Login</a></li><li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>' : "<li>".$_SESSION['user']."</li><li><a href='backend/sair.php'>Sair</a></li>"?>
+                        
+                        
+                    </div>
                 </ul>
 
             </nav>

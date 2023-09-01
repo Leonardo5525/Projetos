@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,16 +31,16 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="current-page">Página inicial</a></li>
-                    <li><a href="Galeria.html" class="">Galeria de fotos </a></li>
-                    <li><a href="Equipe.html" class="">Equipe</a></li>
-                    <li><a href="Sobre.html" class="">Sobre</a></li>
-                    <li><a href="Contato.html" class="">Contato</a></li>
+                    <li><a href="index.php" class="current-page">Página inicial</a></li>
+                    <li><a href="Galeria.php" class="">Galeria de fotos </a></li>
+                    <li><a href="Equipe.php" class="">Equipe</a></li>
+                    <li><a href="Sobre.php" class="">Sobre</a></li>
+                    <li><a href="Contato.php" class="">Contato</a></li>
 
                     <div class="right">
-                        <li><a href="Login.html" class="login">Login</a></li>
+                        <?= !isset($_SESSION['user']) ? '<li><a href="Login.html" class="login">Login</a></li><li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>' : "<li>".$_SESSION['user']."</li><li><a href='backend/sair.php'>Sair</a></li>"?>
                         
-                        <li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>
+                        
                     </div>
                 </ul>
 

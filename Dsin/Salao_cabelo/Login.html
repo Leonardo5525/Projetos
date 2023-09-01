@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Cadastro_Login.css">
     <link rel="shortcut icon" href="img/pngwing.com (1).png" type="image/x-icon">
-    <title> Cadastro-se no Unimar Park </title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -21,24 +21,23 @@
             </div>
         </div>
 
-        <form action="" class="formulario" enctype="multipart/form-data">
+        <form action="backend/login.php" class="formulario" method="post">
             <div class="inputs">
                 <div class="input-user">
-                    <label for="name"> Usuário</label>
-                    <input id="name" type=" text" name="name" placeholder="Digite seu nome de usuário ou E-mail" required>
+                    <label for="name"> Usuario</label>
+                    <input id="name" type="text" name="user" placeholder="Digite seu nome de usuário ou E-mail" required>
                 </div>
             </div>
             <div class="inputs">
                 <div class="input-senha">
                     <label for="rg"> Senha</label>
-                    <input id="rg" type=" text" name="rg" placeholder="Digite seu senha" required>
+                    <input id="rg" type="password" name="senha" placeholder="Digite seu senha" required>
                 </div>
             </div>
+            <div class="login-button">
+                <button type="submit" name="submit">Login</button>
+            </div>
         </form>
-        <div class="login-button">
-            <button> <a href="#"> Login </a></button>
-        </div>
-    </div>
 </body>
 
 </html>

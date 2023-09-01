@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Cadastro_Login.css">
     <link rel="shortcut icon" href="img/pngwing.com (1).png" type="image/x-icon">
-    <title> Cadastro-se no Unimar Park </title>
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
             </div>
         </div>
 
-        <form action="" class="form" enctype="multipart/form-data">
+        <form action="backend/cadastro.php" class="form" method="post">
             <div class="left">
-
+        
                 <div class="input-group">
                     <div class="input-box">
                         <label for="name"> Nome</label>
@@ -39,7 +39,7 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="ra"> CPF</label>
-                        <input id="ra" type=" text" name="ra" placeholder="Digite seu CPF" required>
+                        <input id="ra" type=" text" name="cpf" placeholder="Digite seu CPF" required>
                     </div>
                 </div>
                 <div class="input-group">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <div class="right">
                 <div class="input-group">
                     <div class="input-box">
@@ -60,29 +60,29 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="mac"> Data de nascimento</label>
-                        <input id="mac" type="date" name="mac" placeholder="Digite sua data de nascimento" required>
+                        <input id="mac" type="date" name="nascimento" placeholder="Digite sua data de nascimento" required>
                     </div>
                 </div>
-
+        
                 <div class="input-group">
                     <div class="input-box">
                         <label for="password"> Senha </label>
-                        <input id="password" type=" password" name="password" placeholder="Digite sua senha" required>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
                     </div>
                 </div>
-
+        
                 <div class="input-group">
                     <div class="input-box">
                         <label for="password"> Confirme sua Senha </label>
-                        <input id="password" type=" password" name="Confirmpassword" placeholder="Digite sua senha"
+                        <input id="password" type="password" name="Confirmpassword" placeholder="Digite sua senha"
                             required>
                     </div>
                 </div>
             </div>
+            <div class="cadastrar-button">
+                <button name="submit" type="submit">Cadastrar</button>
+            </div>
         </form>
-        <div class="cadastrar-button">
-            <button> <a href="#"> Cadastrar </a></button>
-        </div>
     </div>
 </body>
 
