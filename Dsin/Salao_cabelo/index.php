@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,9 +38,9 @@
                     <li><a href="Contato.php" class="">Contato</a></li>
 
                     <div class="right">
-                        <?= !isset($_SESSION['user']) ? '<li><a href="Login.html" class="login">Login</a></li><li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>' : "<li>".$_SESSION['user']."</li><li><a href='backend/sair.php'>Sair</a></li>"?>
-                        
-                        
+                        <?= !isset($_SESSION['user']) ? '<li><a href="Login.html" class="login">Login</a></li><li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>' : "<li>" . $_SESSION['user'] . "</li><li><a href='backend/sair.php'>Sair</a></li>" ?>
+
+
                     </div>
                 </ul>
 

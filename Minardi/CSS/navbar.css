@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #141414;
+    --color-navbar: #fff;
+    --bg-navbar: #252525;
+}
+
+.navbar, 
+.navbar .icons,
+.navbar .hamburguer,
+.navbar .user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    font-size: 2em;
+    padding: .8rem;
+    background-color: var(--bg-navbar);
+    color: var(--color-navbar);
+
+    & .logo {
+        cursor: pointer;
+        width: 70vw;
+        & img {
+            width: 5rem;
+            border-radius: 7px;
+        }
+    }
+
+    & .icons {
+        justify-content: space-evenly;
+        width: 30vw;
+    }
+
+    & .hamburguer {
+        & i{
+            cursor: pointer;
+        }
+        display: none;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        & .logo {
+            width: none;
+        }
+        & .hamburguer {
+            display: block;
+            width: calc(50vw - .5rem);
+        }
+
+        & .icons{
+            display: none;
+        }
+    }
+}
+
+body {
+    background-color: var(--bgcolor);
+}
