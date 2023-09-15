@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="CSS/description.css">
+    <title>AnimeDB</title>
+</head>
+<body>
+    <div class="cima-parte">
+
+        <div class="lado-direito">
+            <div class="logo">
+                <img src="imgs/logo-one-piece.png" alt="logo-one-piece">
+
+                <img src="imgs/onePiece.jpe" alt="papel-de-parede-one-piece">
+            </div>
+
+        </div>
+        <div class="lado-direito">
+            <p class="avalia"> Avaliação: </p>
+
+            <div class="avalicao">
+                <i class='bx bxs-star'></i>
+                <p class="nota"> 4.5 </p> <p class="maximo"> /5 </p>
+            </div>
+
+            <p class="titulo-comentarios"> Comentários: </p>
+
+            <div class="n-usuarios">
+                <p class="n-comentarios"> 210 </p>
+                <p class="user"> Usuários</p>
+            </div>
+
+
+        </div>   
+
+    </div>
+
+    <div class="baixo-parte">
+
+        <div class="sinopse"> 
+            <h1> Sinopse </h1>
+            <p class="texto-sinopse"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, officiis quis quia excepturi quas nam. Pariatur libero facere fugit doloribus dolore accusamus repellat, reprehenderit, ex voluptatum porro beatae quas esse.</p>
+        </div>
+
+        <div class="adicionar-comentario">
+            <h2> Comente aqui: </h2>
+            <textarea name="" id="textarea" cols="100" rows="10" placeholder="O que você achou desse anime? "></textarea>
+            <input id="pi_input" type="range" min="0" max="5" step="0.5" />
+            <p><output id="value"></output> Estrelas</p>
+        </div>
+
+        <div class="comentarios">
+            <div class="per">
+                <!-- imagem -->
+                <p> Roronoa Zoro </p>
+                <i class='bx bxs-badge-check'></i>
+                
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+
+            </div>
+            <i class='bx bxs-up-arrow'></i>
+            <p id="gostei"> 22</p>
+            <i class='bx bxs-down-arrow' ></i>
+            <p id="nao-gostei"> 3</p>
+        </div>
+
+    </div>
+    
+    <script src="JS/descricao.js"></script>
+</body>
+</html>
