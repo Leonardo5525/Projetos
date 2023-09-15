@@ -3,3 +3,21 @@
 body{
     background-color: white;
 }
+
+.cima-parte{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 30px;
+}
+
+.lado-esquerdo{
+    flex: 1;
+}
+
+.lado-direito{
+    flex: 1;
+}
+
+.papel-de-parede{
+    width: 1250px;
+}
