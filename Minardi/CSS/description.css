@@ -1,4 +1,4 @@
-@import "navbar.css";
+@import url(navbar.css);
 
 body{
     background-color: white;
@@ -10,14 +10,79 @@ body{
     padding: 0px 30px 0px 30px;
 }
 
+.previa{
+    display: flex;
+    align-items: center;
+}
+
+
+.direita{
+    display: grid;
+    grid-template-columns: min-content max-content;
+}
+
+.titulos{
+    font-weight: bolder;
+}
+
 .lado-esquerdo{
     flex: 1;
 }
 
-.lado-direito{
+.lado-direito {
     flex: 1;
 }
+
+.avaliacao{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.estrelas{
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    font-size: x-large;
+}
+
+.estrelas .nota{
+    font-weight: bolder;
+}
+
+.titulo-comentarios{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.n-usuarios *{
+    display: inline-block;
+}
+
 
 .papel-de-parede{
     width: 1250px;
 }
+
+.baixo-parte{
+    padding: 0px 30px 0px 30px;
+    width: 1325px;
+}
+
+.sinopse{
+    padding: 10px 0px;
+}
+
+.adicionar-comentario{
+    padding: 10px.0px;
+    display: block;
+}
+
+.medidor{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 10px;
+}
+
+.comentario{
+    padding: 10px.0px;
+}
+
