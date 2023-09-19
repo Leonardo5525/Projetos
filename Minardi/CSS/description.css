@@ -13,24 +13,63 @@ body{
 .previa{
     display: flex;
     align-items: center;
+    width: 100%;
+
+    & #like{
+        width: 100%;
+        font-size: 70px;
+
+    }
+
+    & .infos{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap: 0px 10px;
+        width: 70%;
+
+        & .titulos{
+            font-weight: bolder;
+        }
+    }
+
+    & .popularidade{
+        & .titulos{
+            font-weight: bolder;
+        }
+        
+        & .avaliacao{
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        
+        & .estrelas{
+            display: grid;
+            grid-template-columns: min-content min-content min-content;
+            font-size: x-large;
+        }
+        
+        & .estrelas .nota{
+            font-weight: bolder;
+        }
+        
+        & .titulo-comentarios{
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        
+        & .n-usuarios *{
+            display: inline-block;
+        } 
+    }
 }
 
 
-.direita{
-    display: grid;
-    grid-template-columns: min-content max-content;
-}
 
+
+
+/*
 .titulos{
     font-weight: bolder;
-}
-
-.lado-esquerdo{
-    flex: 1;
-}
-
-.lado-direito {
-    flex: 1;
 }
 
 .avaliacao{
@@ -55,11 +94,11 @@ body{
 
 .n-usuarios *{
     display: inline-block;
-}
+} */
 
 
 .papel-de-parede{
-    width: 1250px;
+    width: 70%;
 }
 
 .baixo-parte{
@@ -68,7 +107,9 @@ body{
 }
 
 .sinopse{
-    padding: 10px 0px;
+    display: inline-block;
+    width: 75%;
+    padding: 10px 0px 10px 0px;
 }
 
 .adicionar-comentario{
