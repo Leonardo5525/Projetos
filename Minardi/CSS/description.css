@@ -2,25 +2,47 @@
 
 body{
     background-color: white;
-    padding: 0px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
 }
 
 .previa{
     display: flex;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+
+    & .lado-esquerdo{  
+        display: flex;
+        align-items: center;
+    }
 
     & #like{
-        width: 100%;
+            
         font-size: 70px;
 
+    }
+
+    & .lado-direito{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        align-items: center;
+
+        & .popularidade{
+            text-align: center;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            flex-direction: column;
+        }
     }
 
     & .infos{
         display: grid;
         grid-template-columns: max-content max-content;
         grid-gap: 0px 10px;
-        width: 60%;
+            
 
         & .titulos{
             font-weight: bolder;
@@ -28,7 +50,7 @@ body{
     }
 
     & .popularidade{
-        width: 30%;
+            
         & .titulos{
             font-weight: bolder;
         }
@@ -42,6 +64,11 @@ body{
             display: grid;
             grid-template-columns: min-content min-content min-content;
             font-size: x-large;
+            justify-content: center;
+            
+            & i{
+                color: gold;
+            }
         }
         
         & .estrelas .nota{
@@ -81,18 +108,32 @@ body{
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 10px;
-        align-items: center;
-        background-color: rgb(68, 65, 65);
-        color: wheat;
-        border-radius: 10px;
-        border-color: #ffffff;
-        border-style: solid;
-        border-width: 1px;
+        background-color: #ffffff;
 
-        & #icones{
-            justify-self: center;
-            font-size: 500%;
+        & .box{
+            text-align: center;
+            background-color: rgb(68, 65, 65);
+            color: wheat;
+            border-radius: 10px;
+            border-color: #ffffff;
+            border-style: solid;
+            border-width: 1px;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            flex-direction: column;
+
+            & i{
+                font-size: 500%;
+                width: 100%;
+            }
+
+            & div{
+                font-size: 150%;
+            }
         }
+
     }
 }
 
@@ -154,11 +195,13 @@ body{
             & #gostei{
                 display: inline-block;
                 color: green;
+                font-weight: bold;
             }
 
             & #nao-gostei{
                 display: inline-block;
                 color: red;
+                font-weight: bold;
             }
         }    
     }
