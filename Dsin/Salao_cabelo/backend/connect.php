@@ -1,4 +1,5 @@
 <?php
+// Esse arquivo foi feto para realizar o acesso ao banco de dados conforme as info, armazenadas abaixo
 
 const HOSTNAME = "LOCALHOST";
 const USER = "root";

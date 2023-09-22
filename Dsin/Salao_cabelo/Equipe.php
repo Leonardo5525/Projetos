@@ -26,6 +26,9 @@
                     <li><a href="Contato.php">Contato</a></li>
 
                     <div class="right">
+                        <!-- Operador ternário, uma condicional para exibir no html o que será exposto ao usuário. -->
+                        <!--Se estiver algum usuário em seção irá mostrar com o icone de usuário e um botão para sair-->
+
                         <?= !isset($_SESSION['user']) ? '<li><a href="Login.html" class="login">Login</a></li><li><a href="Cadastro.html" class="cadastro">Cadastro</a></li>' : "<li>".$_SESSION['user']."</li><li><a href='backend/sair.php'>Sair</a></li>"?>
                         
                         
