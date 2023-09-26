@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="arrow">
+            <a href="index.html"><i class='bx bx-chevron-left'></i>Voltar</a>
+        </div>
+        <div class="container">
+            <div class="forms">
+                <form autocomplete="off">
+                    <h1 class="title">
+                        Faça o seu Login!
+                    </h1>
+                    <div class="row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Digite o seu email" title="Digite o seu email" required>
+                    </div>
+                    <div class="row">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite a sua senha" title="Digite a sua senha" required>
+                        <div class="visu">
+                            <input type="checkbox" onclick="show('password')" name="passwVisu" id="passwVisu">
+                            <label for="passwVisu">Visualizar senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" name="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="image">
+                <img src="imgs/anime.webp" alt="anime">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let show = (inputPassword) => {
+            inputPassword = document.getElementById(inputPassword);
+            if (inputPassword.type === "text") {
+                inputPassword.type = "password";
+            } else {
+                inputPassword.type = "text";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
