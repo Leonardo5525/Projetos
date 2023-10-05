@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Unimar park</title>
+</head>
+<body>
+    <form action="">
+        <!-- Head form -->
+        <div class="headingsContainer">
+            <h3>Unimar park - Login</h3>
+            <br>
+            <p>Acesse com seu nome de Usuário e Senha</p>
+        </div>
+
+        <!-- Main container -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Usuário</label>
+            <input type="text" placeholder="Digite seu usuário" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pswrd">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="pswrd" required>
+
+            <!-- sub container checkbox / forgot -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Lembre de mim
+                </label>
+                <p class="forgotpsd"> <a href="#">Esqueceu sua senha?</a></p>
+            </div>
+
+
+            <!-- Submit button -->
+            <button type="submit">Entrar</button>
+
+            <!-- Sign up link -->
+            <p class="register">Não está cadastrado?  <a href="#">Preencha formulário de cadastro aqui!</a></p>
+
+        </div>
+
+    </form>
+</body>
+</html>
