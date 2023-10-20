@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Produtos</h1>
+        <button class="filter-button" onclick="filterProducts('all')">Todos</button>
+        <button class="filter-button" onclick="filterProducts('electronics')">Eletrônicos</button>
+        <button class="filter-button" onclick="filterProducts('jewelery')">Joias</button>
+        <button class="filter-button" onclick="filterProducts('men clothing')">Roupas Masculinas</button>
+        <button class="filter-button" onclick="filterProducts('women clothing')">Roupas Femininas</button>
+        <button class="filter-button" onclick="sortProducts('asc')">Preço Baixo para Alto</button>
+        <button class="filter-button" onclick="sortProducts('desc')">Preço Alto para Baixo</button>
+    </div>
+</body>
+</html>
