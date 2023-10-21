@@ -41,6 +41,8 @@ function showProductDetails(product) {
 }
 
 function filterProducts(category) {
+    if (category === 'men') category = "men's clothing";
+    else if (category === 'women') category = "women's clothing"
     const filteredProducts = productsData.filter(product => category === 'all' || product.category === category);
     displayProducts(filteredProducts);
 }

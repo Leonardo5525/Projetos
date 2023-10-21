@@ -315,9 +315,9 @@ body.dark .home .text{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50vw;
-    opacity: 0.3;
     height: 100%;
     width: 100%;
+    opacity: 0.3;
 }
 
 /* Active HTML and JS */
@@ -329,4 +329,13 @@ li a:is(:link, :active,:visited){
 a:is(:link, :active,:visited).active {
     color: #695CFE;
     background-color: #FFF;
+}
+
+.whiteboard{
+    background-color: #FFF;
+    margin-left: 120px;
+    height: 80%;
+    width: 80%;
+    opacity: unset;
+
 }

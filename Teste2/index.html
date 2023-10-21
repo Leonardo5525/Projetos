@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,11 @@
     <script defer src="main.js"></script>
     <title>Lista de Produtos</title>
 </head>
-
 <body>
-    <h1>Lojinha do Japonês</h1>
-    <div class="container">
+    <input id="searchbar" type="search">
+
+    <div class="container" id="container">
+        <h1>Lista de Produtos</h1>
         <button class="filter-button" onclick="filterProducts('all')">Todos</button>
         <button class="filter-button" onclick="filterProducts('electronics')">Eletrônicos</button>
         <button class="filter-button" onclick="filterProducts('jewelery')">Joias</button>
@@ -22,6 +22,15 @@
     </div>
 
     <div id="productList"></div>
+    <div id="details" style="display: none">
+        <button id="backButton">Voltar</button>
+        <div class="tittle-enter" id="title"></div>
+        <div class="price-enter" id="price"></div>
+        <div class="category-enter" id="category"></div>
+        <div class="description-enter" id="description"></div>
+        <div class="rate-enter" id="rate"></div>
+        <div class="count-enter" id="count"></div>
+        <img id="image">
+    </div>
 </body>
-
 </html>
