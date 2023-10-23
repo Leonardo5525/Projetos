@@ -1,0 +1,70 @@
+@import 'modal.css';
+
+.produtos-site{
+    padding: 20px;
+}
+
+#backButton{
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 2em;
+    border-radius: 30px;
+}
+
+#searchIcon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.search {
+    background-color: none; 
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search.active {
+    background-color: var(--background-color);
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.search input {
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+}
+
+.sides{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.right-side{
+    display: inline-block;
+    border: solid;
+    background-color: red;
+    flex: 1;
+}
+
+.left-side{
+    flex: 1;
+    display: inline-block;
+}
+
+.img-grade{
+    border: solid;
+    height: 80%;
+    width: 80%;
+}
+
+.img-grade img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+}
